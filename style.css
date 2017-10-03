@@ -1,0 +1,99 @@
+*, *::after
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  background-color: #EFECCA;
+}
+
+.menu-container
+{
+  display flex;
+  justify-content center;
+  color: #fff;
+  background-color: #B9314F;
+}
+
+.menu
+{
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: .5em;
+}
+
+.members
+{
+  display flex;
+  justify-content: flex-end;
+}
+
+.login
+{
+  margin-left: 20px;
+}
+
+.navigation
+{
+  height: 100px;
+  background-color: #D5A18E;
+}
+
+h1
+{
+  text-align: center;
+}
+
+.gallery
+{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  justify-content: space-around;
+  padding: 2rem .5rem;
+  background-color: #EFECCA;
+}
+
+.card
+{
+  display: flex;
+  flex-direction: column;
+  border: 5px solid;
+  background-color: #DEC3BE;
+  justify-content: center;
+  padding: 2rem .5rem;
+  margin: 2rem .5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+}
+
+.card-title
+{
+  margin-bottom: 0;  /*-- removes bottom margin of card title --*/
+  font-weight: 700;
+}
+
+.card-text
+{
+  justify-content: center;
+}
+
+.card-button
+{
+  text-transform: uppercase;  /*-- sets uppercase text --*/
+  font-size: .75rem;  /*-- smaller font size --*/
+  padding: .5rem;
+}
+
+footer
+{
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: .5em;
+  color: #fff;
+  background-color: #B9314F;
+}
