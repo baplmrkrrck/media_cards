@@ -8,6 +8,13 @@ body
   background-color: #EFECCA;
 }
 
+a {
+  color:white;
+}
+a:hover, a:visited {
+  color:purple;
+}
+
 .menu-container
 {
   display flex;
@@ -22,6 +29,11 @@ body
   display: flex;
   justify-content: space-around;
   padding: .5em;
+}
+
+.title
+{
+  font-size: 24px;
 }
 
 .members
@@ -39,6 +51,19 @@ body
 {
   height: 100px;
   background-color: #D5A18E;
+  display flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.nav-button
+{
+  text-transform: uppercase;
+  font-size: .75rem;
+  padding: .5rem;
 }
 
 h1
@@ -72,7 +97,7 @@ h1
 
 .card-title
 {
-  margin-bottom: 0;  /*-- removes bottom margin of card title --*/
+  margin-bottom: 0;
   font-weight: 700;
 }
 
@@ -83,11 +108,20 @@ h1
 
 .card-button
 {
-  text-transform: uppercase;  /*-- sets uppercase text --*/
-  font-size: .75rem;  /*-- smaller font size --*/
+  text-transform: uppercase;
+  font-size: .75rem;
   padding: .5rem;
 }
 
+@media screen and (min-width: 550px) {  /*-- for screens above 550px  --*/
+  .card {width: 50%;} /*-- sets card width to half of the page --*/
+}
+@media screen and (min-width: 1024px) { /*-- for screens above 1024px  --*/
+  .card {width: 33.33333%;} /*-- sets card width to one-third of the page --*/
+}
+@media screen and (min-width: 1280px) { /*-- for screens above 1280px  --*/
+  .card {width: 25%;} /*-- sets card width to one-quarter of the page --*/
+}
 footer
 {
   width: auto;
